@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #F9FAFB;
+    color: #111827;
+}
+
+/* GLOBAL */
+.section-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a, .socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #111827;
+    font-weight: 500;
+}
+
+nav a:hover, .socials a:hover {
+    color: #2563EB;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero-images img {
+    width: 250px;
+    margin: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* TEAM */
+.team {
+    padding: 80px 20px;
+    background: #EAECF4; /* subtle blue background */
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.member img {
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.member:hover img {
+    transform: scale(1.05);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    padding: 60px 20px;
+    background: #E5E7EB;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial {
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ABOUT HERO */
+.about-hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* TEAM ABOUT */
+.team-about {
+    padding: 80px 20px;
+    background: #EEF2FF;
+    text-align: center;
+}
+
+.team-description {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* VALUES */
+.values {
+    padding: 80px 20px;
+    background: #F9FAFB;
+    text-align: center;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}
