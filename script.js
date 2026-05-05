@@ -9,3 +9,12 @@ const observer = new IntersectionObserver(entries => {
 });
 
 elements.forEach(el => observer.observe(el));
+
+const heroBg = document.querySelector('.hero-bg');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    // Move background at half speed
+    heroBg.style.transform = `translateY(${scrollY * 0.5}px)`;
+});
